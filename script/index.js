@@ -1,9 +1,5 @@
-const loadLessons = () => {
-    fetch("https://openapi.programming-hero.com/api/levels/all") //Promise of response
-    .then((res) => res.json()) // promise of json data
-    .then((json) =>  displayLesson(json.data));
 
-};
+
 const loadLevelWord=(id)=> {
 
     const ulr = `https://openapi.programming-hero.com/api/word/${id}`;
@@ -20,6 +16,12 @@ const displayLevelWord = (words) => {
         console.log(word);
     });
 }
+
+const loadLessons = () => {
+    fetch("https://openapi.programming-hero.com/api/levels/all") //Promise of response
+    .then((res) => res.json()) // promise of json data
+    .then((json) =>  displayLesson(json.data));
+};
 
 function displayLesson(lessons) {
     // 1. get the container & empty
