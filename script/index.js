@@ -2,7 +2,7 @@
 
 const loadLevelWord=(id)=> {
 
-    const ulr = `https://openapi.programming-hero.com/api/word/${id}`;
+    const ulr = `https://openapi.programming-hero.com/api/level/${id}`;
     fetch(ulr)
     .then((res) =>res.json())
     .then((data) => displayLevelWord(data.data) )
