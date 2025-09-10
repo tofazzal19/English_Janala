@@ -16,9 +16,9 @@ const displayLevelWord = (words) => {
        
   <div class="text-center  col-span-full rounded-xl py-10 space-y-6 font-bangla">
     <img class="mx-auto" src="./images/alert-error.png"/>
-  <p class="text-xl font-medium text-gray-500 py-10 space-y-6">এই এখনো কোন
+  <p class="text-xl font-medium text-gray-500 py-10 space-y-6">এখনো কোন
      Lesson যুক্ত করা হয়নি
-       </p>
+    </p>
     <h2 class="font-bold text-4xl">নেক্সট Lesson এ যান
      </h2>
   </div>`
